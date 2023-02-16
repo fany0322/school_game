@@ -27,12 +27,13 @@ body {
     display: flex;
     justify-content: center;
     position: relative;
+    flex-direction: column;
 }
 .glass {
     position: absolute;
     top: 21px;
     right: 0px;
-    width: 12px;
+    width: 14px;
     border: solid;
     border-radius: 5px;
 }
@@ -47,4 +48,10 @@ body {
     width: 160px;
     height: 150px;
     margin: 25px 0 0 0;
+}
+.chainword {
+    display: flex;
+    background-color: white;
+    justify-content: flex-start;
+    align-items: flex-end;
 }
