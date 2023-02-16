@@ -1,0 +1,86 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin:0;
+    background-color: rgb(46, 44, 44);
+}
+.box1{
+    display:flex;
+    width: 550px;
+    height: 100vh;
+    background-color:#A8B8A6;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.box2{
+    display:flex;
+    width:500px;
+    height: 600px;
+    background-color:#791A1A; 
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.box3{
+    width:450px;
+    height: 550px;
+    background-color:#1B5B16; 
+    border-radius: 20px;
+}
+.all{
+    display:flex;
+    align-items:flex-start;
+    justify-content: flex-start;
+}
+.score_box{
+    display: flex;
+    width: 150px;
+    height:30px;
+    background-color: white;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.rank{
+    display:flex;
+    position:absolute;
+    font-size: 120%;
+    width: 35px;
+    height:150px;
+    border-radius: 10px;
+    background-color: black;
+    color:white;
+    align-items: center;
+    justify-content: center;
+    top:350px;text-align: center;
+}
+.school_name{
+    font-size: 200%;
+    font-weight: bolder;
+}
+.hog{
+    display:none;
+    width:30px;
+    height:40px;
+}
+
+@keyframes change-size {
+    from {
+        width: 40px;
+        height: 40px;
+    }
+    to {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.animate {
+    animation: change-size 0.3s infinite alternate;
+}
