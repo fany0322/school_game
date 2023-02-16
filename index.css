@@ -1,0 +1,50 @@
+#search {
+    border-radius: 5px;
+    margin-top: 20px;
+    border: 1px solid black;
+}
+strong {
+    border-radius: 5px;
+}
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 550px;
+    background-color: #A8B8A6;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    background-color: rgb(46,44,44);
+}
+.daughter {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.glass {
+    position: absolute;
+    top: 21px;
+    right: 0px;
+    width: 12px;
+    border: solid;
+    border-radius: 5px;
+}
+.mole {
+    display: flex;
+    width: 188px;
+    height: 170px;
+    margin-top: 50px;
+    margin-bottom: 35px;
+}
+.school {
+    width: 160px;
+    height: 150px;
+    margin: 25px 0 0 0;
+}
