@@ -2,7 +2,7 @@ function addSchoolList(){
     let schoolList = []
     const data = TestFile.DATA
     for (let i=0; i < data.length; i++){
-        schoolList.push(data[i].schul_nm)
+        schoolList.push({id : data[i].sd_schul_code, name: data[i].schul_nm})
     }
     return schoolList
 }
@@ -16,7 +16,7 @@ function search() {
     let isResult = false
     let schoolNames = []
     for (let i=0; i<schoolList.length; i++){
-        if(schoolList[i].includes(search.value) === true){
+        if(schoolList[i].name.includes(search.value) === true){
             isResult = true
             schoolNames.push(schoolList[i])
         }
@@ -27,7 +27,7 @@ function search() {
         searchList.innerHTML = ""
         for (let i=0; i<schoolNames.length; i++){
             searchList.insertAdjacentHTML('beforeEnd', `
-            <a class="chainword" href="game.html?schoolName=${schoolNames[i]}">${schoolNames[i]}</div>
+            <a class="chainword" href="game.html?schoolName=${schoolNames[i].name}&id=${schoolNames[i].id}">${schoolNames[i].name}</div>
         `)
         }
 
