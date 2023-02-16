@@ -1,14 +1,26 @@
 let a = document.getElementsByClassName('hog')[0]
 let w = document.getElementsByClassName('box3')
 let score=document.getElementsByClassName('score_box')[0]
+let box = document.getElementsByClassName('rank')[0]
+let rankb = document.getElementsByClassName('rank_box')[0]
 let m=0
 let count=0
 // let x1 = w.offsetLeft
-function click(e){
-    m++;
-    e.target.src = 'dead.png'
-    e.target.className = 'animate'
-    score.innerText = `${m}`
+async function click(e){
+    if (e.target.className !== 'animate') {
+        e.target.src = 'dead.png'
+        e.target.className = 'animate'
+        let result1 = await postScore()
+        let result2 = await insertScore()
+    } else {
+        return
+    }
+
+
+}
+function fade(icon){
+    icon.className='animate3'
+    let fadeTimer = setTimeout(() => icon.remove(), 300)
 }
 function popout() {
     let x = Math.floor(Math.random()*410) - 205;
@@ -18,6 +30,7 @@ function popout() {
     icon.style.width = '40px';
     icon.style.height = '40px';
     icon.style.position = 'absolute';
+    icon.className = 'animate2';
     icon.style.left = 'calc(50vw - 20px)';
     icon.style.top = 'calc(50vh - 20px)';
     icon.style.transform = `translate(${x}px, ${y}px)`;
@@ -25,8 +38,17 @@ function popout() {
     icon.addEventListener('click', click)
     let delay = Math.random()*1000
     let timer1 = setTimeout(() => w[0].append(icon), delay)
-    let timer2 = setTimeout(() => icon.remove(), 2000+delay)
+    let timer2 = setTimeout(() => fade(icon), 2000+delay)
 }
 popout()
 let timer3 = setInterval(popout, 500)
-
+function rankBox(){
+    console.log(rankb.style.display)
+    if(rankb.style.display==="none"){
+        rankb.style.display="flex"; 
+        box.style.left="55.23vw";
+    }else{
+        rankb.style.display="none"; 
+        box.style.left="";
+    }
+}

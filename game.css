@@ -5,6 +5,7 @@ body{
     height: 100vh;
     margin:0;
     background-color: rgb(46, 44, 44);
+    font-family: 'TTTtangsbudaejjigaeB';
 }
 .box1{
     display:flex;
@@ -34,7 +35,7 @@ body{
 }
 .all{
     display:flex;
-    align-items:flex-start;
+    align-items:center;
     justify-content: flex-start;
 }
 .score_box{
@@ -59,6 +60,7 @@ body{
     align-items: center;
     justify-content: center;
     top:350px;text-align: center;
+    z-index:2;
 }
 .school_name{
     font-size: 200%;
@@ -80,7 +82,63 @@ body{
         height: 50px;
     }
 }
+@keyframes Big-size {
+    from {
+        width: 0px;
+        height: 0px;
+    }
+    to {
+        width: 40px;
+        height: 40px;
+    }
+}
+@keyframes fade-size{
+    from {
+        width: 40px;
+        height: 40px;
+    }
+    to {
+        width: 0px;
+        height: 0px;
+    }
+}
 
 .animate {
     animation: change-size 0.3s infinite alternate;
+}
+
+.animate2 {
+    animation: Big-size 0.3s;
+}
+.animate3 {
+    animation: fade-size 0.3s;
+}
+.ab{
+    position: absolute;
+}
+@keyframes move-left{
+    from{
+        left: 300px;
+    }
+    to{
+        left: null;
+    }
+}
+.rank_box{
+    width:350px;
+    height:500px;
+    position:absolute;
+    background-color: #D9D9D9;
+    top: 100px;
+    border-color: black;
+    border-style: 20px;
+    border-radius: 20px;
+    z-index: 1;
+    /* animation: move-left 1s; */
+}
+@font-face {
+    font-family: 'TTTtangsbudaejjigaeB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/TTTtangsbudaejjigaeB.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
 }
