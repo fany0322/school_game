@@ -18,7 +18,7 @@ strong {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    width: 550px;
+    width: 80%;
     background-color: #A8B8A6;
 }
 body {
@@ -41,7 +41,7 @@ body {
     position: absolute;
     top: 21px;
     right: 0px;
-    width: 40px;
+    width: 39px;
     border: solid;
     border-radius: 5px;
 }
@@ -56,7 +56,7 @@ body {
     display:flex;
     position: relative;
     width: 90px;
-    height: 90px;
+    height: 100px;
     bottom:600px;
 }
 .chainword {
@@ -75,4 +75,8 @@ body {
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/TTTtangsbudaejjigaeB.woff2') format('woff2');
     font-weight: 700;
     font-style: normal;
+}
+.catch {
+    display: flex;
+    font-size: 80%;
 }

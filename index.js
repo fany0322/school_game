@@ -1,3 +1,8 @@
+const login = (event) => {
+    console.log(event)
+    if (event.key === 'Enter') search()
+}
+
 function addSchoolList(){
     let schoolList = []
     const data = TestFile.DATA
