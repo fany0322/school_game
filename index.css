@@ -49,17 +49,17 @@ body {
 .mole {
     display: flex;
     max-width: 350px;
-    width:80vw;
-    height: 300px;
-    margin-top: 150px;
-    margin-bottom: 35px;    
+    width:50vw;
+    height: 40vh;
+    margin-top: 170px;
+    margin-bottom: 35px;        
 }
 .school {
     display:flex;
     position: relative;
     width: 90px;
     height: 100px;
-    bottom:600px;
+    bottom:590px;
 }
 .chainword {
     display: flex;
@@ -83,7 +83,9 @@ body {
 }
 .catch {
     display: flex;
-    font-size: 80%;
+    font-size: 130%;
+    position:relative;
+    top:30px;
 }
 
 #search-list{
