@@ -23,9 +23,12 @@ function fade(icon){
     let fadeTimer = setTimeout(() => icon.remove(), 300)
 }
 function popout() {
-    window.innerWidth // 가로길이
-    window.innerHeight // 세로길이
-    let x = Math.floor(Math.random()*window.innerWidth*0.75-40) - (window.innerWidth*0.75-40)/2;
+    let x;
+    if (window.innerWidth > 480) {
+        x = Math.floor(Math.random()*360) - 180;
+    } else {
+        x = Math.floor(Math.random()*window.innerWidth*0.75-40) - (window.innerWidth*0.75-40)/2;
+    }
     let y = Math.floor(Math.random()*480) - 240;
     let icon = document.createElement('img')
     icon.src = 'hog.png';
