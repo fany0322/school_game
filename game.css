@@ -9,7 +9,8 @@ body{
 }
 .box1{
     display:flex;
-    width: 450px;
+    max-width: 450px;
+    width: 80vw;
     height: 100vh;
     background-color:#A8B8A6;
     justify-content: center;
@@ -18,7 +19,8 @@ body{
 }
 .box2{
     display:flex;
-    width:400px;
+    max-width:400px;
+    width:75vw;
     height: 600px;
     background-color:#791A1A; 
     border-radius: 20px;
@@ -28,7 +30,8 @@ body{
 
 }
 .box3{
-    width:350px;
+    max-width:350px;
+    width: 70vw;
     height: 550px;
     background-color:#1B5B16; 
     border-radius: 20px;
