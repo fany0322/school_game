@@ -2,9 +2,15 @@
     border-radius: 5px;
     margin-top: 20px;
     border: 1px solid black;
+    
 }
 strong {
+    font-size : 150%; 
     border-radius: 5px;
+}
+.schooll{
+    position:relative;
+    top:120px;
 }
 #container {
     display: flex;
@@ -21,6 +27,7 @@ body {
     align-items: center;
     text-align: center;
     margin: 0;
+    font-family:'TTTtangsbudaejjigaeB';
     background-color: rgb(46,44,44);
 }
 .daughter {
@@ -28,26 +35,29 @@ body {
     justify-content: center;
     position: relative;
     flex-direction: column;
+    top:120px;
 }
 .glass {
     position: absolute;
     top: 21px;
     right: 0px;
-    width: 14px;
+    width: 40px;
     border: solid;
     border-radius: 5px;
 }
 .mole {
     display: flex;
-    width: 188px;
-    height: 170px;
-    margin-top: 50px;
-    margin-bottom: 35px;
+    width: 350px;
+    height: 300px;
+    margin-top: 150px;
+    margin-bottom: 35px;    
 }
 .school {
-    width: 160px;
-    height: 150px;
-    margin: 25px 0 0 0;
+    display:flex;
+    position: relative;
+    width: 90px;
+    height: 90px;
+    bottom:600px;
 }
 .chainword {
     display: flex;
@@ -59,3 +69,10 @@ body {
     display:flex;
     justify-content: center;
     align-items: center;
+}
+@font-face {
+    font-family: 'TTTtangsbudaejjigaeB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/TTTtangsbudaejjigaeB.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
