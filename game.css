@@ -65,6 +65,7 @@ body{
     justify-content: center;
     top:350px;text-align: center;
     z-index:2;
+    
 }
 .school_name{
     font-size: 200%;
@@ -143,6 +144,7 @@ body{
     border-radius: 20px;
     z-index: 1;
     flex-direction: column;
+    overflow:scroll;
     /* animation: move-left 1s; */
 }
 @font-face {
