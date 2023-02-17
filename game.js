@@ -46,9 +46,11 @@ function rankBox(){
     console.log(rankb.style.display)
     if(rankb.style.display==="none"){
         rankb.style.display="flex"; 
-        box.style.left="55.23vw";
+        box.innerText="랭크닫기"
+        box.style.left="59vw";
     }else{
         rankb.style.display="none"; 
+        box.innerText="랭크보기"
         box.style.left="";
     }
 }
