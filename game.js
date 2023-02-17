@@ -25,7 +25,7 @@ function fade(icon){
 function popout() {
     window.innerWidth // 가로길이
     window.innerHeight // 세로길이
-    let x = Math.floor(Math.random()*window.innerWidth*0.8-40) - (window.innerWidth*0.8-40)/2;
+    let x = Math.floor(Math.random()*window.innerWidth*0.75-40) - (window.innerWidth*0.75-40)/2;
     let y = Math.floor(Math.random()*480) - 240;
     let icon = document.createElement('img')
     icon.src = 'hog.png';
