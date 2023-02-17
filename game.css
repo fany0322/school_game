@@ -9,7 +9,8 @@ body{
 }
 .box1{
     display:flex;
-    width: 550px;
+    max-width: 450px;
+    width: 100vw;
     height: 100vh;
     background-color:#A8B8A6;
     justify-content: center;
@@ -18,7 +19,8 @@ body{
 }
 .box2{
     display:flex;
-    width:500px;
+    max-width:400px;
+    width:90vw;
     height: 600px;
     background-color:#791A1A; 
     border-radius: 20px;
@@ -28,7 +30,8 @@ body{
 
 }
 .box3{
-    width:450px;
+    max-width:350px;
+    width: 85vw;
     height: 550px;
     background-color:#1B5B16; 
     border-radius: 20px;
@@ -126,8 +129,11 @@ body{
     }
 }
 .rank_box{
-    width:350px;
-    height:500px;
+    display: flex;
+    max-width:350px;
+    width:60vw;
+    max-height:500px;
+    height:80vh;
     position:absolute;
     background-color: #D9D9D9;
     border: 5px solid black;
@@ -136,6 +142,7 @@ body{
     border-style: 20px;
     border-radius: 20px;
     z-index: 1;
+    flex-direction: column;
     /* animation: move-left 1s; */
 }
 @font-face {
