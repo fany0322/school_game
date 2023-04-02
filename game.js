@@ -31,7 +31,7 @@ function popout() {
     }
     let y = Math.floor(Math.random()*480) - 240;
     let icon = document.createElement('img')
-    icon.srcrc = 'hog.png';
+    icon.src = 'hog.png';
     icon.style.width = '40px';
     icon.style.height = '40px';
     icon.style.position = 'absolute';
