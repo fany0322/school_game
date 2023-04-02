@@ -62,10 +62,6 @@ async function showRank() {
     }
     // 우리 학교 랭크 표시
     // let jsonData = TestFile.DATA.find(element => element.sd_schul_code===schoolId)
-    //박환희는 천재임 ㅇㅇ 안정원 멍청이 문도훈 chubby chungus ㅋㄱㅋㄱㅋㄱㅋㄱ 나는 천재 이걸보는 사람은 멍청이
-//뭐
-//꼬우면 찾아오던지
-//정연우 이태균이랑 사귐
     let rank = scores.findIndex(element => element.id === schoolId)
     let name = document.getElementsByClassName('school_name')[0]
     name.innerText = `${rank+1}등 ${qs.schoolName}`
