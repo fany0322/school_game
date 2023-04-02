@@ -39,7 +39,7 @@ function popout() {
     icon.style.left = 'calc(50vw - 20px)';
     icon.style.top = 'calc(50vh - 20px)';
     icon.style.transform = `translate(${x}px, ${y}px)`;
-    // icon.style.transition = 'width 0.5s, height 0.5s';
+    icon.style.transition = 'width 0.5s, height 0.5s';
     icon.addEventListener('click', click)
     let delay = Math.random()*1000
     let timer1 = setTimeout(() => w[0].append(icon), delay)
