@@ -52,6 +52,7 @@ function popout() {
 }
 popout()
 let timer3 = setInterval(popout, 500)
+// rankb가 보이지 않으면 보이도록 하고, 보이면 숨기는 함수
 function rankBox(){
     console.log(rankb.style.display)
     // 랭크보기 버틑을 눌렀을때 나오는 화면 
